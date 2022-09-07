@@ -1,0 +1,246 @@
+html{
+    scroll-behavior: smooth;;
+  }
+
+  @media (max-width: 992px) {
+    button.navbar-toggler {
+        position: absolute !important;
+        right: 50px !important;
+        top: 40px !important;
+    }
+ }
+
+body{
+    font-family: 'Josefin Slab', serif;
+}
+
+.logo{
+    min-height: 70px;
+    min-width: 200px;
+}
+.banner-main{
+    min-height: 30%;
+    min-width: 65%;
+}
+
+.jose{
+    font-family: 'Josefin Slab', serif;
+    color:white;
+    font-size:40px;
+    padding: 30px 10px;
+   
+}
+.navbar, .navlink{
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+}
+.nav-link:hover{
+    color:#E56C5C !important;
+}
+
+a { color:white!important; }
+
+a:visited { color:white; }
+
+.back-dark{
+    background-color: #4D241F; 
+}
+.bg-darky{
+    background-color: #27180A;
+}
+.flyers{
+    max-height: 800px;
+    min-height: 200px;
+    min-width: 160px;
+    transition: transform .2s;
+}
+
+.swiper1{
+    height: 40em;
+    
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 550px) {
+    .swiper1{
+        height: 35em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 550px) {
+    .swiper1{
+        height: 22em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 650px) {
+    .swiper1{
+        height: 28em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 800px) {
+    .swiper1{
+        height: 22em;
+    }
+}
+@media only screen and (min-width: 950px) {
+    .swiper1{
+        height: 28em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1300px) {
+    .swiper1{
+        height: 30em;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .swiper1{
+        height: 40em;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+}
+
+
+.swiper-button-next{
+     color: white !important;
+}
+.swiper-button-prev{
+     color: white!important;
+}
+
+.swiper-button-next:hover{
+    color:#E56C5C!important;
+}
+.swiper-button-prev:hover{
+    color:#E56C5C!important;
+}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+  }
+
+  .card{
+      border:none !important;
+      background-color: #4D241F !important;
+
+  }
+  .card-body{
+      background-color: #4D241F;
+      font-family: 'Josefin Slab', serif;
+      font-size: 22px;
+      color: white;
+  }
+  .card-body:hover{
+    color:#E56C5C;
+}
+
+.logo-galerie{
+    height: 30vh;
+    width: 30vh;
+    border: solid 2px white;
+    background-color: white;
+    background-image: url(./imgs/galerie-light.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+.logo-savarez{
+    height: 30vh;
+    width: 30vh;
+    border: solid 2px white;
+    background-color: white;
+    background-image: url(./imgs/savarez.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+.cont-artistas{
+    background-color:#4D241F;
+    min-height: max-content + 20px;
+}
+.cont-conciertos{
+    background-color: #362019;  
+    min-height: max-content + 20px;
+}
+
+footer{
+    height: 150px;
+    color: white;
+}
+
+.texto-detalle{
+    color: white;
+}
+
+.cont-bio{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1200px)  {
+    .cont-bio{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+img{
+    align-self: center;
+    max-height: 100%;
+
+}
+
+.img-bio{
+    align-self: flex-start;
+
+}
+
+.innercontainer {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+  }
+  .card-flip-container:hover .innercontainer {
+    transform: rotateY(180deg);
+  }
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+  }
